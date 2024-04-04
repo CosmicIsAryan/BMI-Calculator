@@ -1,0 +1,6 @@
+<resources xmlns:font-size="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">Bmi calculator</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="weight">Weight</string>
+    <string name="kg_m">Kg/m<sup>2</sup></string>
+</resources>
