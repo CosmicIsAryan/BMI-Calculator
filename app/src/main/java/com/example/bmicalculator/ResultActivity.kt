@@ -42,11 +42,27 @@ class ResultActivity : AppCompatActivity() {
     private fun obesity(bmi:Float) : String{
 
         when(bmi){
-            in 0.0..18.4 -> return "Under Weight"
-            in 18.5 ..24.9 -> return "Normal"
-            in 25.0 .. 29.9 -> return "OverWeight"
-            in 30.0 ..34.9 -> return "Obese"
-            else -> return "Extremly obese"
+            in 0.0..18.4 -> {
+                binding.emoji.setImageResource(R.drawable.emoji1)
+                return "Under Weight" }
+
+            in 18.5 ..24.9 ->  {
+                binding.emoji.setImageResource(R.drawable.emoji2)
+                return "Normal"
+            }
+            in 25.0 .. 29.9 -> {
+                binding.emoji.setImageResource(R.drawable.emoji3)
+                return "OverWeight"
+            }
+            in 30.0 ..34.9 ->{
+                binding.emoji.setImageResource(R.drawable.emoji4)
+                return "Obese"}
+
+            else ->{
+                binding.emoji.setImageResource(R.drawable.emoji5)
+                return "Extremly obese"
+            }
+
         }
 
     }
